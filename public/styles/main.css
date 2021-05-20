@@ -1,0 +1,150 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.logo {
+  width: 180px;
+  margin-top: 68px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32.62px;
+  box-sizing: border-box;
+}
+
+.login input {
+  width: 303px;
+  height: 45px;
+  border: 1px solid #d5d5d5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.login input::placeholder {
+  color: #dbdbdb;
+  margin-left: 11px;
+}
+
+.login .send-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 303px;
+  height: 45px;
+  background: #52b6ff;
+  border-radius: 4.63636px;
+  color: white;
+  margin-top: 5px;
+}
+
+.create-account {
+  margin-top: 25px;
+  font-size: 13.976px;
+  color: #52b6ff;
+  text-decoration-line: underline;
+  margin-bottom: 40px;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32.62px;
+  box-sizing: border-box;
+}
+
+.register input {
+  width: 303px;
+  height: 45px;
+  border: 1px solid #d5d5d5;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.register input::placeholder {
+  color: #dbdbdb;
+  margin-left: 11px;
+}
+
+.register .send-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 303px;
+  height: 45px;
+  background: #52b6ff;
+  border-radius: 4.63636px;
+  color: white;
+  margin-top: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  height: 70px;
+  background: #126ba5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header img {
+  width: 51px;
+  border-radius: 98.5px;
+  margin-right: 10px;
+}
+
+.header .title {
+  font-family: "Playball", cursive;
+  font-size: 38.982px;
+  line-height: 49px;
+  margin-left: 18px;
+  color: white;
+}
+
+.content {
+    background-color: #E5E5E5;
+    height: 100vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    height: 70px;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+.today {
+    display: flex;
+    background: #52B6FF;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca';
+    font-size: 17.976px;
+    width: 91px;
+    height: 91px;
+    border-radius: 45.5px;
+    position: fixed;
+    bottom: 10px;
+    left: calc(50% - 45.5px);
+    z-index: 3;
+    color: white;
+}
