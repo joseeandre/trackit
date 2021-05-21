@@ -10,7 +10,6 @@ export default function Today(props) {
     render,
     setRender,
   } = props;
-  const week = ["D", "S", "T", "Q", "Q", "S", "S"];
   const config = {
     headers: {
       Authorization: `Bearer ${token}`,

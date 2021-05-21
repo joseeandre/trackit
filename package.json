@@ -1,45 +1,42 @@
 {
-    "name": "trackit",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "axios": "^0.21.1",
-        "dayjs": "^1.10.4",
-        "isemail": "^3.2.0",
-        "isurl": "^4.0.2",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "react-loader-spinner": "^4.0.0",
-        "react-router-dom": "^5.2.0",
-        "react-scripts": "4.0.3",
-        "validator": "^13.6.0"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "gh-pages": "^3.1.0"
-    }
+  "name": "trackit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
+    "gh-pages": "^3.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-loader-spinner": "^4.0.0",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "validator": "^13.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

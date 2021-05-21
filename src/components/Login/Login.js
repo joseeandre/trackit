@@ -1,6 +1,6 @@
 import { Link, useHistory } from "react-router-dom";
 import React, { useState } from "react";
-import { isEmail, isURL } from 'validator';
+import { isEmail } from 'validator';
 import axios from "axios";
 import Loading from "./Loading";
 export default function Login(props) {
