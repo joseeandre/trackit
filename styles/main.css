@@ -25,6 +25,7 @@ body {
   box-sizing: border-box;
   border-radius: 5px;
   margin-top: 5px;
+  position: relative;
 }
 
 .login input::placeholder {
@@ -68,6 +69,7 @@ body {
   box-sizing: border-box;
   border-radius: 5px;
   margin-top: 5px;
+  position: relative;
 }
 
 .register input::placeholder {
@@ -172,7 +174,7 @@ body {
 .lnr-eye {
   position: absolute;
   top: 70px;
-  right: 50px;
+  right: 70px;
   cursor: pointer;
 }
 
