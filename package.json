@@ -27,7 +27,7 @@
       "react-app"
     ]
   },
-  "homepage": ".",
+  "homepage": "https://joseeandre.github.io/trackit",
   "browserslist": {
     "production": [
       ">0.2%",

@@ -13,7 +13,7 @@ function App() {
   const [image, setImage] = useState("");
   return (
     <>
-      <BrowserRouter basename="https://joseeandre.github.io/trackit">
+      <BrowserRouter>
         <Switch>
           <Route path="/" exact>
             <Login setToken={setToken} setImage={setImage} />
