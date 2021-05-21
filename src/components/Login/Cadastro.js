@@ -10,6 +10,7 @@ export default function Cadastro() {
   const [image, setImage] = useState("");
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [visibilePass, setVisiblePass] = useState(false);
   const history = useHistory();
 
   function sendRegister() {
@@ -48,14 +49,23 @@ export default function Cadastro() {
     })
   }
 
+  function seePassword() {
+    if(visibilePass){
+      setVisiblePass(false);
+    } else {
+      setVisiblePass(true);
+    }
+  }
+
   return (
     <>
       <div className="logo">
         <img src="pictures/logo.svg" alt="logo" />
       </div>
       <div className="register">
-      <input type="text" placeholder="email" onChange={e => setEmail(e.target.value)} />
-        <input type="text" placeholder="senha" onChange={e => setPassword(e.target.value)} />
+        <input type="text" placeholder="email" onChange={e => setEmail(e.target.value)} />
+        <input type={visibilePass ? "text":"password"} placeholder="senha" onChange={e => setPassword(e.target.value)} />
+        <span onClick={seePassword} className="lnr lnr-eye"></span>
         <input type="text" placeholder="nome" onChange={e => setName(e.target.value)} />
         <input type="text" placeholder="foto" onChange={e => setImage(e.target.value)} />
         <div className="send-register" onClick={sendRegister}>{isLoading ? <Loading />:"Cadastrar"}</div>

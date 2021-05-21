@@ -7,6 +7,7 @@ export default function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [visibilePass, setVisiblePass] = useState(false);
   const history = useHistory();
   const { setToken, setImage } = props;
 
@@ -38,6 +39,14 @@ export default function Login(props) {
     })
   }
 
+  function seePassword() {
+    if(visibilePass){
+      setVisiblePass(false);
+    } else {
+      setVisiblePass(true);
+    }
+  }
+
   return (
     <>
       <div className="logo">
@@ -45,7 +54,8 @@ export default function Login(props) {
       </div>
       <div className="login">
         <input type="text" placeholder="email" onChange={e => setEmail(e.target.value)} />
-        <input type="text" placeholder="senha" onChange={e => setPassword(e.target.value)} />
+        <input type={visibilePass ? "text":"password"} placeholder="senha" onChange={e => setPassword(e.target.value)} />
+        <span onClick={seePassword} className="lnr lnr-eye"></span>
         <div className="send-login" onClick={sendLogin}>{isLoading ? <Loading />:"Entrar"}</div>
         <Link to="/cadastro" className="create-account">Não tem uma conta? Cadastre-se</Link>
       </div>

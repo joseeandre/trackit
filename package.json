@@ -4,6 +4,7 @@
     "private": true,
     "dependencies": {
         "axios": "^0.21.1",
+        "dayjs": "^1.10.4",
         "isemail": "^3.2.0",
         "isurl": "^4.0.2",
         "react": "^17.0.2",
