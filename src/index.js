@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, HashRouter } from "react-router-dom";
 
 import Login from "./components/Login/Login";
 import Cadastro from "./components/Login/Cadastro";
@@ -13,7 +13,7 @@ function App() {
   const [image, setImage] = useState("");
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route path="/" exact>
             <Login setToken={setToken} setImage={setImage} />
@@ -31,7 +31,7 @@ function App() {
             <Historico token={token} image={image} />
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
